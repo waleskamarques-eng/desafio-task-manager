@@ -1,0 +1,25 @@
+<div class="container">
+  <h1>Lista de Tarefas</h1>
+
+  <table border="1" cellpadding="10">
+
+    <thead>
+      <tr>
+        <th>ID</th>
+        <th>Título</th>
+        <th>Descrição</th>
+        <th>Status</th>
+      </tr>
+    </thead>
+
+    <tbody>
+      <tr *ngFor="let task of tasks">
+        <td>{{ task.id }}</td>
+        <td>{{ task.titulo }}</td>
+        <td>{{ task.descricao }}</td>
+        <td>{{ task.status }}</td>
+      </tr>
+    </tbody>
+
+  </table>
+</div>
